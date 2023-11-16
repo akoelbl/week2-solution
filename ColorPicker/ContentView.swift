@@ -48,6 +48,7 @@ struct ContentView: View {
       RoundedRectangle(cornerRadius: 0)
         .foregroundColor(foregroundColor)
         .border(.black)
+        .animation(.easeInOut, value: foregroundColor)
       VStack {
         Text("Red")
         HStack {
